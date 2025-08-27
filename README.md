@@ -285,24 +285,7 @@ This project is based on recent research highlighting the widespread nature of A
 
 MIT License - see [LICENSE](LICENSE) for details.
 
-## 🎯 Roadmap
 
-**Q1 2025:**
-- [ ] Multi-language support (Python, Rust)
-- [ ] GitHub Copilot integration
-- [ ] Performance benchmarks vs. existing tools
-
-**Q2 2025:**  
-- [ ] VS Code extension
-- [ ] CI/CD integrations
-- [ ] Enterprise deployment guides
-
-**Q3 2025:**
-- [ ] Browser extension for online IDEs
-- [ ] Integration partnerships with AI tool companies
-- [ ] Advanced semantic search capabilities
-
----
 
 <div align="center">
 
