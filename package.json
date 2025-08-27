@@ -1,0 +1,79 @@
+{
+  "name": "ai-import-guard-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that prevents AI import hallucination by discovering available packages and validating imports in real-time",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-import-guard-mcp": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run build",
+    "demo": "tsx examples/demo.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "agents",
+    "import-validation",
+    "package-discovery",
+    "code-generation",
+    "hallucination-prevention",
+    "development-tools",
+    "typescript",
+    "javascript",
+    "copilot",
+    "cursor",
+    "claude",
+    "chatgpt"
+  ],
+  "author": "Al-Ekram Elahee Hridoy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alhridoy/ai-import-guard-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alhridoy/ai-import-guard-mcp/issues"
+  },
+  "homepage": "https://github.com/alhridoy/ai-import-guard-mcp#readme",
+  "dependencies": {
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
+    "@babel/types": "^7.28.1",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "@typescript/vfs": "^1.6.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.7",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "angular": "^1.8.3",
+    "eslint": "^8.54.0",
+    "express": "^5.1.0",
+    "jest": "^30.0.4",
+    "tsx": "^4.6.0",
+    "typescript": "^5.8.3",
+    "vitest": "^1.0.0",
+    "vue": "^3.5.17"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
